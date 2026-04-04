@@ -1082,7 +1082,7 @@ function MobileStickyBar() {
           letterSpacing: "0.15em", textTransform: "uppercase",
           padding: "0.9rem",
         }}>
-          <span style={{ marginRight: "0.4rem" }}>📍</span> 170 Canal St
+          <span style={{ marginRight: "0.4rem" }}></span> 170 Canal St
         </div>
       </div>
 
