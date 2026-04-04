@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import "./App.css";
 
 const GOLD = "#c9a84c";
 const DARK_GOLD = "#a8852a";
@@ -831,7 +832,6 @@ function About() {
   );
 }
 
-/* ── Hours ─────────────────────────────────────────────────────── */
 function Hours() {
   const ref = useFadeIn();
   const days = [
@@ -879,7 +879,7 @@ function Hours() {
           {/* Mobile call CTA inside hours section */}
           <div className="mobile-hours-cta" style={{ display: "none", marginTop: "2rem" }}>
             <a href="tel:+19173535985" className="btn-gold" style={{ display: "block", textAlign: "center" }}>
-              📞 Call to Inquire
+               Call to Inquire
             </a>
           </div>
         </div>
@@ -930,7 +930,6 @@ function Hours() {
   );
 }
 
-/* ── Reviews ───────────────────────────────────────────────────── */
 function Reviews() {
   const ref = useFadeIn();
   const reviews = [
@@ -1239,7 +1238,7 @@ function Contact() {
             background: PANEL, border: `1px solid rgba(201,168,76,0.2)`,
             padding: "1.1rem 0.5rem", textDecoration: "none",
           }}>
-            <span style={{ fontSize: "1.3rem" }}>📞</span>
+            <span style={{ fontSize: "1.3rem" }}></span>
             <span style={{ fontFamily: "'Josefin Sans', sans-serif", fontSize: "0.6rem", letterSpacing: "0.18em", color: GOLD, textTransform: "uppercase" }}>Call</span>
           </a>
           <a href="https://maps.apple.com/?q=170+Canal+Street+New+York" target="_blank" rel="noreferrer" style={{
@@ -1247,7 +1246,7 @@ function Contact() {
             background: PANEL, border: `1px solid rgba(201,168,76,0.2)`,
             padding: "1.1rem 0.5rem", textDecoration: "none",
           }}>
-            <span style={{ fontSize: "1.3rem" }}>📍</span>
+            <span style={{ fontSize: "1.3rem" }}></span>
             <span style={{ fontFamily: "'Josefin Sans', sans-serif", fontSize: "0.6rem", letterSpacing: "0.18em", color: GOLD, textTransform: "uppercase" }}>Directions</span>
           </a>
           <div style={{
@@ -1255,7 +1254,7 @@ function Contact() {
             background: PANEL, border: `1px solid rgba(201,168,76,0.2)`,
             padding: "1.1rem 0.5rem",
           }}>
-            <span style={{ fontSize: "1.3rem" }}>🚶</span>
+            <span style={{ fontSize: "1.3rem" }}></span>
             <span style={{ fontFamily: "'Josefin Sans', sans-serif", fontSize: "0.6rem", letterSpacing: "0.18em", color: GOLD, textTransform: "uppercase" }}>Walk-In</span>
           </div>
         </div>
@@ -1357,7 +1356,7 @@ function Contact() {
   );
 }
 
-/* ── App ───────────────────────────────────────────────────────── */
+
 export default function App() {
   const [page, setPage] = useState("home");
   useEffect(() => { window.scrollTo(0, 0); }, [page]);
